@@ -1,3 +1,4 @@
+/* eslint-disable react/no-did-mount-set-state */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -25,6 +26,13 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 class LatestBlockView extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      blockNumber: 0,
+    };
+  }
+
   async loadBlock() {
     let infuraUrl =
       'https://ropsten.infura.io/7e1bff4dff6f4b7c8378cd267712857c';
@@ -33,17 +41,25 @@ class LatestBlockView extends React.Component {
     const web3 = await new Web3(new Web3.providers.HttpProvider(infuraUrl, 50));
     web3.eth
       .getBlock('latest')
-      .then(response => console.log(response))
+      .then(response => {
+        console.log(response);
+        this.setState({
+          blockNumber: response.number,
+        });
+      })
       .catch(error => console.log(error));
   }
 
   componentDidMount() {
+    this.setState({
+      blockNumber: 0,
+    });
     console.log('Component did mount');
     this.loadBlock();
   }
 
   render() {
-    return <Text>Eto text</Text>;
+    return <Text>Tut nomer blocka - {this.state.blockNumber}</Text>;
   }
 }
 
