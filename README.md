@@ -1,12 +1,11 @@
 # React Native - Web3 Initialization
 
 ## Setup
-Init new empty project
+Init new empty project:
 ```
 react-native init APPNAME
 ```
-
-Move to newly created app project folder and execute
+Move to newly created app project folder and execute:
 ```
 npm i --save react-native-crypto
 npm i --save react-native-randombytes
@@ -19,7 +18,7 @@ npm i --save node-libs-browser
 npm i base-64
 ```
 
-Modify APPNAME/metro.config.js:
+Copy to APPNAME/metro.config.js:
 ```
 const extraNodeModules = require('node-libs-browser');
 
@@ -37,8 +36,7 @@ module.exports = {
   },
 };
 ```
-
-Modify shim.js:
+Copy to APPNAME/shim.js:
 ```
 import {decode, encode} from 'base-64'
 
@@ -83,7 +81,7 @@ Install Web3 module (latest version not working):
 npm i --save web3@1.0.0-beta.55
 ```
 
-Open and build through Xcode for the first time
+Open and build through Xcode for the first time:
 ```
 xed -b ios
 ```
