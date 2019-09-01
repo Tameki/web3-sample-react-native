@@ -58,6 +58,8 @@ PODS:
   - React-jsinspector (0.60.5)
   - react-native-randombytes (3.5.3):
     - React
+  - react-native-udp (2.6.1):
+    - React
   - React-RCTActionSheet (0.60.5):
     - React-Core (= 0.60.5)
   - React-RCTAnimation (0.60.5):
@@ -95,6 +97,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-randombytes (from `../node_modules/react-native-randombytes`)
+  - react-native-udp (from `../node_modules/react-native-udp`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -134,6 +137,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-randombytes:
     :path: "../node_modules/react-native-randombytes"
+  react-native-udp:
+    :path: "../node_modules/react-native-udp"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -170,6 +175,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 90ad2f9db09513fc763bc757fdc3c4ff8bde2a30
   React-jsinspector: e08662d1bf5b129a3d556eb9ea343a3f40353ae4
   react-native-randombytes: 991545e6eaaf700b4ee384c291ef3d572e0b2ca8
+  react-native-udp: 4a750f0802d4597252f2cae4a2b3302ee5cfa4fc
   React-RCTActionSheet: b0f1ea83f4bf75fb966eae9bfc47b78c8d3efd90
   React-RCTAnimation: 359ba1b5690b1e87cc173558a78e82d35919333e
   React-RCTBlob: 5e2b55f76e9a1c7ae52b826923502ddc3238df24

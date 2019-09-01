@@ -1,6 +1,19 @@
 # React Native - Web3 Initialization
+React Native app web3 initialization example
 
-## Setup
+## Cloned project setup
+Clone repository.
+Move to project folder and execute:
+```
+npm install
+cd ios
+pod install
+cd ..
+./node_modules/.bin/rn-nodeify --install
+xed -b ios
+```
+
+## Base setup
 Init new empty project:
 ```
 react-native init APPNAME
